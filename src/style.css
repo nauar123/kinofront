@@ -1,0 +1,86 @@
+/* --- Navigation --- */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Side og overskrifter --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* --- Tabeller i oversigterne--- */
+.show-oversigt table,
+.booking-oversigt table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.show-oversigt th,
+.show-oversigt td,
+.booking-oversigt th,
+.booking-oversigt td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.show-oversigt th,
+.booking-oversigt th {
+    background-color: #f4f4f4;
+}
+
+/* --- Simpel centreret formular for film, show og booking --- */
+.film-form, .show-form, .booking-form {
+    width: 300px;
+    margin: 30px auto; /* centreret */
+}
+
+.film-form form, .show-form form, .booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.film-form label, .show-form label, .booking-form label {
+    margin-top: 10px;
+}
+
+.film-form input, .film-form select,
+.show-form input, .show-form select,
+.booking-form input, .booking-form select {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.film-form input[type="submit"],
+.show-form input[type="submit"],
+.booking-form input[type="submit"] {
+    padding: 7px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- Tilbage-knap --- */
+#tilbage-knap-container button {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
