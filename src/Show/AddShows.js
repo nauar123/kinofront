@@ -20,4 +20,16 @@ form.addEventListener("submit", function(e){
         body:JSON.stringify(show)
     })
 
+    // Tilbage knap
+    const tilbageKnap = document.createElement("button");
+    tilbageKnap.textContent = "Tilbage";
+
+    tilbageKnap.addEventListener("click", () => {
+        history.back();
+    });
+
+    const container = document.getElementById("tilbage-knap-container");
+    container.appendChild(tilbageKnap);
+
+
 });

@@ -18,6 +18,20 @@ form.addEventListener("submit", function(e) {
         headers:{ "Content-Type": "application/json" },
         body: JSON.stringify(film)
     })
+    // Tilbage knap
+
+    const tilbageKnap = document.createElement("button");
+    tilbageKnap.textContent = "Tilbage";
+
+    tilbageKnap.addEventListener("click", () => {
+        history.back();
+    });
+
+    const container = document.getElementById("tilbage-knap-container");
+    container.appendChild(tilbageKnap);
+
+
+
 
 });
 
